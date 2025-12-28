@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube 목업 사이트</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+<body>
+    <header class="youtube-header">
+    <div class="header-left">
+        <button class="menu-icon">
+            <img src="assets/icons/hamburger-menu.svg" alt="메뉴" class="icon">
+        </button>
+        <a href="#" class="logo">
+            <img src="assets/icons/youtube-logo.svg" alt="YouTube Clone Logo" class="logo-img">
+        </a>
+    </div>
+
+    <div class="header-middle">
+        <div class="search-container">
+            <input type="text" placeholder="검색" class="search-input">
+            <button class="search-button">
+                <img src="assets/icons/search.svg" alt="검색" class="icon">
+            </button>
+        </div>
+        <button class="voice-search-btn">
+             <img src="assets/icons/voice-search-icon.svg" alt="음성 검색" class="icon">
+        </button>
+    </div>
+
+    <div class="header-right">
+        <button class="icon-btn">
+            <img src="assets/icons/upload.svg" alt="업로드" class="icon">
+        </button>
+        <button class="icon-btn">
+            <img src="assets/icons/youtube-apps.svg" alt="앱" class="icon">
+        </button>
+         <button class="icon-btn">
+            <img src="assets/icons/notifications.svg" alt="알림" class="icon">
+        </button>
+        <img src="assets/images/avatars/avatar-1.png" alt="사용자 프로필" class="profile-avatar">
+    </div>
+</header>
+
+<div id="content-area">
+    <aside class="sidebar">
+        <div class="sidebar-section">
+        <a href="#" class="sidebar-link active">
+            <img src="assets/icons/home.svg" alt="홈" class="link-icon">
+            홈
+        </a>
+        <a href="#" class="sidebar-link">
+            <img src="assets/icons/explore.svg" alt="탐색" class="link-icon">
+            탐색
+        </a>
+        <a href="#" class="sidebar-link">
+            <img src="assets/icons/originals.svg" alt="Shorts" class="link-icon"> 
+            Shorts
+        </a>
+        <a href="#" class="sidebar-link">
+            <img src="assets/icons/subscriptions.svg" alt="구독" class="link-icon">
+            구독
+        </a>
+    </div>
+    
+    <hr class="separator">
+
+    <div class="sidebar-section">
+        <a href="#" class="sidebar-link">
+            <img src="assets/icons/library.svg" alt="보관함" class="link-icon">
+            보관함
+        </a>
+        <a href="#" class="sidebar-link">
+             <img src="assets/icons/youtube-music.svg" alt="시청 기록" class="link-icon">
+            시청 기록
+        </a>
+    </div>
+
+        <hr class="separator">
+        
+        <h3 class="sidebar-title">구독</h3>
+        <div class="sidebar-section subscriptions">
+            <a href="#" class="sidebar-link">
+                <img src="assets/images/channels4_profile.jpg" alt="채널1" class="channel-avatar">
+                오선의 미국증시 라이브
+            </a>
+            <a href="#" class="sidebar-link">
+                <img src="assets/images/BDNS.jpg" alt="채널2" class="channel-avatar">
+                빠더너스 BDNS
+            </a>
+        </div>
+    </aside> 
+
+    <main class="main-content">
+    
+    <div class="filter-bar">
+        <button class="filter-pill">전체</button>
+        <button class="filter-pill">음악</button>
+        <button class="filter-pill">실시간</button>
+        <button class="filter-pill">게임</button>
+        <button class="filter-pill">여행</button>
+    </div>
+
+    <section class="video-grid">
+        
+        <article class="video-card">
+            <div class="thumbnail-container">
+                <img src="assets/images/thumbnails/thumbnail-7.jpeg" alt="유럽의 돌길 거리" class="thumbnail-image">
+                <span class="video-duration">08:15</span>
+            </div>
+            <div class="video-info">
+                <img src="assets/images/avatars/avatar-1.png" alt="채널 아바타" class="channel-avatar">
+                <div class="text-content">
+                    <h3 class="video-title">아름다운 독일 소도시의 저녁 산책</h3>
+                    <p class="channel-name">유럽 소식통</p>
+                    <p class="video-metadata">조회수 5.4천회 • 1일 전</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="video-card">
+            <div class="thumbnail-container">
+                <img src="assets/images/thumbnails/thumbnail-8.jpeg" alt="해안가 등대" class="thumbnail-image">
+                <span class="video-duration">15:50</span>
+            </div>
+            <div class="video-info">
+                <img src="assets/images/avatars/avatar-1.png" alt="채널 아바타" class="channel-avatar">
+                <div class="text-content">
+                    <h3 class="video-title">파도치는 바닷가: 포틀랜드 헤드 등대</h3>
+                    <p class="channel-name">바다의 기록</p>
+                    <p class="video-metadata">조회수 12만회 • 3주 전</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="video-card">
+            <div class="thumbnail-container">
+                <img src="assets/images/thumbnails/thumbnail-4.jpeg" alt="작은 섬 축구장" class="thumbnail-image">
+                <span class="video-duration">03:01</span>
+            </div>
+            <div class="video-info">
+                <img src="assets/images/avatars/avatar-1.png" alt="채널 아바타" class="channel-avatar">
+                <div class="text-content">
+                    <h3 class="video-title">세상에서 가장 외로운 축구 경기장 TOP 10</h3>
+                    <p class="channel-name">스포츠 탐험</p>
+                    <p class="video-metadata">조회수 55만회 • 2개월 전</p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="video-card">
+            <div class="thumbnail-container">
+                <img src="assets/images/thumbnails/thumbnail-1.jpeg" alt="산 위 은하수" class="thumbnail-image">
+                <span class="video-duration">22:40</span>
+            </div>
+            <div class="video-info">
+                <img src="assets/images/avatars/avatar-1.png" alt="채널 아바타" class="channel-avatar">
+                <div class="text-content">
+                    <h3 class="video-title">별이 쏟아지는 밤: 은하수 타임랩스 비법</h3>
+                    <p class="channel-name">천체 관측</p>
+                    <p class="video-metadata">조회수 2만회 • 5일 전</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="video-card">
+            <div class="thumbnail-container">
+                <img src="assets/images/thumbnails/thumbnail-2.jpeg" alt="깔끔한 데스크 셋업" class="thumbnail-image">
+                <span class="video-duration">10:10</span>
+            </div>
+            <div class="video-info">
+                <img src="assets/images/avatars/avatar-1.png" alt="채널 아바타" class="channel-avatar">
+                <div class="text-content">
+                    <h3 class="video-title">2025년 미니멀리스트 우드 데스크 셋업</h3>
+                    <p class="channel-name">인테리어 조언</p>
+                    <p class="video-metadata">조회수 88천회 • 1개월 전</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="video-card">
+            <div class="thumbnail-container">
+                <img src="assets/images/thumbnails/thumbnail-5.jpeg" alt="뉴욕 겨울 풍경" class="thumbnail-image">
+                <span class="video-duration">06:45</span>
+            </div>
+            <div class="video-info">
+                <img src="assets/images/avatars/avatar-1.png" alt="채널 아바타" class="channel-avatar">
+                <div class="text-content">
+                    <h3 class="video-title">겨울 뉴욕, 허드슨 강변에서 바라본 맨해튼</h3>
+                    <p class="channel-name">도시 여행자</p>
+                    <p class="video-metadata">조회수 45천회 • 2주 전</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="video-card">
+            <div class="thumbnail-container">
+                <img src="assets/images/thumbnails/thumbnail-3.jpeg" alt="오로라와 보트" class="thumbnail-image">
+                <span class="video-duration">18:00</span>
+            </div>
+            <div class="video-info">
+                <img src="assets/images/avatars/avatar-1.png" alt="채널 아바타" class="channel-avatar">
+                <div class="text-content">
+                    <h3 class="video-title">북유럽의 밤: 오로라 아래에서의 캠핑과 보트</h3>
+                    <p class="channel-name">캠핑 라이프</p>
+                    <p class="video-metadata">조회수 21만회 • 4개월 전</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="video-card">
+            <div class="thumbnail-container">
+                <img src="assets/images/thumbnails/thumbnail-6.jpeg" alt="런던의 야경" class="thumbnail-image">
+                <span class="video-duration">12:34</span>
+            </div>
+            <div class="video-info">
+                <img src="assets/images/avatars/avatar-1.png" alt="채널 아바타" class="channel-avatar">
+                <div class="text-content">
+                    <h3 class="video-title">도시 야경의 극치: 런던 빅벤과 웨스트민스터</h3>
+                    <p class="channel-name">여행 기록자</p>
+                    <p class="video-metadata">조회수 12만회 • 3주 전</p>
+                </div>
+            </div>
+        </article>
+
+    </section>
+</main>
+</body>
+</html>
