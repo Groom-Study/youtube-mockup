@@ -17,10 +17,10 @@ JS 강의를 통해 자바스크립트에 대해 학습하고, HTML과 CSS를 �
 
 | 이름 | 담당 미션 | 작업 브랜치 (Link) | 상태 |
 | :--- | :--- | :--- | :--- |
-| **김윤상** | 인스타그램 / 유튜브 | [feature/yoonsang_FullStack19](https://github.com/Groom-Study/instagram-mockup/tree/feature/yoonsang_FullStack19) | ✅ 완료 |
-| **팀원 1** | 인스타그램 | [feature/member1](#) | 🏗️ 진행 중 |
-| **팀원 2** | 인스타그램 | [feature/member2](#) | 🏗️ 진행 중 |
-| **팀원 3** | 인스타그램 | [feature/member3](#) | 🏗️ 진행 중 |
+| **배윤상** | 인스타그램 / 유튜브 | [feature/yoonsang_FullStack19](https://github.com/Groom-Study/instagram-mockup/tree/feature/yoonsang_FullStack19) | ✅ 완료 |
+| **지연우** | 인스타그램 | [feature/member1](#) | 🏗️ 진행 중 |
+| **엄효선** | 인스타그램 | [feature/member2](#) | 🏗️ 진행 중 |
+| **이우민** | 인스타그램 | [feature/member3](#) | 🏗️ 진행 중 |
 
 ---
 
