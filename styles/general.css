@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --primary: #0f0f0f;
+  --secondary: #050505;
+
+  --text-primary: #efefef;
+  --text-secondary: #aaa;
+  --text-primary-inverse: #0f0f0f;
+
+  --icon-color: #fff;
+  --icon-inactive: #fff;
+  --icon-disabled: #717171;
+
+  --base-background: #0f0f0f;
+  --menu-background: #282828;
+  --raised-background: #212121;
+  --inverted-background: #f1f1f1;
+  --overlay-additive-background: rgba(40, 40, 40, 0.6);
+
+  --static-gray: #606060;
+  --scrollbar: #aaa;
+
+  --header-height: 56px;
+  --sidebar-width: 72px;
+  --chip-bar-height: 56px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  scrollbar-color: var(--scrollbar) transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+  border-radius: 8px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+main {
+  margin-top: 112px;
+  /* 헤더 + 칩바 높이만큼 띄움 */
+  margin-left: var(--sidebar-width);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+
+  display: block;
+  box-sizing: content-box;
+
+  color: var(--icon-color, #fff);
+  border-radius: 50%;
+}
+
+.icon svg {
+  fill: currentColor;
+}

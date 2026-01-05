@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/assets/icons/favicon_32x32.png" sizes="32x32" />
+  <link rel="icon" href="/assets/icons/favicon_48x48.png" sizes="48x48" />
+  <link rel="icon" href="/assets/icons/favicon_96x96.png" sizes="96x96" />
+  <link rel="icon" href="/assets/icons/favicon_144x144.png" sizes="144x144" />
+  <title>YouTube</title>
+  <link rel="stylesheet" href="/styles/general.css" />
+  <link rel="stylesheet" href="/styles/header.css" />
+  <link rel="stylesheet" href="/styles/sidebar.css" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/video.css" />
+  <script src="/scripts/main.js" defer></script>
+  <script src="/scripts/icon-loader.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="start-section">
+        <div class="back-btn"></div>
+        <button class="hamburger-btn">
+          <div class="icon" data-icon="hamburger-menu"></div>
+        </button>
+        <a class="logo" href="/" title="YouTube Premium 홈">
+          <div class="logo-renderer">
+            <div class="logo-wrapper">
+              <div class="icon icon-premium" data-icon="premium"></div>
+            </div>
+            <span class="logo-youtube-country">KR</span>
+          </div>
+        </a>
+        <div class="skip-navigation"></div>
+      </div>
+
+      <div class="center-section">
+        <div class="searchbox">
+          <div class="search-inputbox">
+            <form class="search-form">
+              <input class="search-input" id="search-input" type="text" placeholder="검색" />
+            </form>
+            <div class="search-assistant-wrapper">
+              <button class="search-assistant-btn">
+                <img class="search-assistant-icon" src="/assets/icons/tia.png" />
+              </button>
+            </div>
+          </div>
+          <button class="search-btn" title="검색">
+            <div class="icon" data-icon="search"></div>
+          </button>
+        </div>
+        <div class="mic-wrapper">
+          <button class="mic-btn">
+            <div class="icon" data-icon="mic"></div>
+            <div class="header-tooltip">음성으로 검색</div>
+          </button>
+        </div>
+      </div>
+
+      <div class="end-section">
+        <button class="create-btn">
+          <div class="icon icon-create" data-icon="add"></div>
+          <span>만들기</span>
+        </button>
+        <button class="alarm-btn">
+          <div class="icon" data-icon="alarm"></div>
+          <div class="header-tooltip">알림</div>
+        </button>
+        <button class="avatar-btn">
+          <div class="icon icon-avatar" data-icon="avatar"></div>
+        </button>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="chip-bar-renderer">
+        <div class="chips-wrapper">
+          <div class="chips-content">
+            <div class="chips-scroll-container">
+              <div class="chips-container">
+                <div class="chip active">전체</div>
+                <div class="chip">뉴스</div>
+                <div class="chip">팟캐스트</div>
+                <div class="chip">게임</div>
+                <div class="chip">애니메이션</div>
+                <div class="chip">최근에 업로드된 동영상</div>
+                <div class="chip">새로운 맞춤 동영상</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="sidebar-guide">
+      <div class="sidebar-section">
+        <div class="endpoint-entry">
+          <a class="endpoint">
+            <div class="icon endpoint-icon" data-icon="home"></div>
+            <div class="sidebar-tooltip">홈</div>
+          </a>
+        </div>
+        <div class="endpoint-entry">
+          <a class="endpoint">
+            <div class="icon endpoint-icon" data-icon="shorts"></div>
+            <div class="sidebar-tooltip">Shorts</div>
+          </a>
+        </div>
+        <div class="endpoint-entry">
+          <a class="endpoint">
+            <div class="icon endpoint-icon" data-icon="subscriptions"></div>
+            <div class="sidebar-tooltip">구독</div>
+          </a>
+        </div>
+        <div class="endpoint-entry">
+          <a class="endpoint">
+            <div class="icon endpoint-icon" data-icon="music"></div>
+            <div class="sidebar-tooltip">YouTube Music</div>
+          </a>
+        </div>
+        <div class="endpoint-entry">
+          <a class="endpoint">
+            <div class="icon endpoint-icon" data-icon="avatar"></div>
+            <div class="sidebar-tooltip">내 페이지</div>
+          </a>
+        </div>
+        <div class="endpoint-entry">
+          <a class="endpoint">
+            <div class="icon endpoint-icon" data-icon="offline"></div>
+            <div class="sidebar-tooltip">오프라인 저장 동영상</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <content>
+      <section class="video-grid">
+        <!-- 1 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/1.avif">
+            <div class="video-time">1:33:52</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/t1.jpg">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">여섯 개의 별을 새기며｜2025 Worlds Behind</p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <div class="video-author-container">
+                <p class="video-author">T1</p>
+                <div class="icon icon-official" data-icon="official-badge"></div>
+              </div>
+              <p class="video-stats">
+                조회수 16만회 • 5시간 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/2.avif">
+            <div class="video-time">10:30</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/joosool.jpg">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">스쿠나 VS 마허라 전투 분석 【주술회전】</p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <p class="video-author">주술회전 백과사전</p>
+              <p class="video-stats">
+                조회수 11만회 • 1일 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/3.avif">
+            <div class="video-time">3:33:40</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/kbo-opener.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                [풀버전] MLB 2025 시즌, 이 영상 하나면 끝! 핵심 스토리 완전 정복🔥
+              </p>
+              <p class="video-author">
+                크보오프너
+              </p>
+              <p class="video-stats">
+                조회수 2.5천회 • 11시간 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/4.avif">
+            <div class="video-time">4:25</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/sadoong.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                영하 날씨에 산책 나갔더니 강아지가 이불 밖으로 안나와요..ㅠㅠ
+              </p>
+              <p class="video-author">
+                사둥이네TV
+              </p>
+              <p class="video-stats">
+                조회수 4만회 • 1일 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/5.avif">
+            <div class="video-time">41:02</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/unnameedtv.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                세기의 조합🌎 '썬킴+최고민수 = 나락(?)'👎😲 도대체 대만 여행에서 무슨 일이??!!!
+              </p>
+              <p class="video-author">
+                정형돈의 제목없음TV
+              </p>
+              <p class="video-stats">
+                조회수 61만회 • 4주 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/6.avif">
+            <div class="video-time">6:22:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/chimchakman.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                '진격의 거인(Attack on Titan)' 감상회 완전판
+              </p>
+              <div class="video-author-container">
+                <p class="video-author">
+                  침착맨
+                </p>
+                <div class="icon icon-official" data-icon="official-badge"></div>
+              </div>
+              <p class="video-stats">
+                조회수 127만회 • 4개월 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/7.avif">
+            <div class="video-time">19:03</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/itsub.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                2025년 테크기기 총결산! 올해 가장 좋았던 제품과 가장 별로였던 제품은?! | 잇워드 2025
+              </p>
+              <div class="video-author-container">
+                <p class="video-author">
+                  ITSub잇섭
+                </p>
+                <div class="icon icon-official" data-icon="official-badge"></div>
+              </div>
+              <p class="video-stats">
+                조회수 58만회 • 4일 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/8.avif">
+            <div class="video-time">35:58</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/boda.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                상상인 줄만 알았던 아바타 세계관이 실제로 존재하고 있다는 흔적들 (외계 생명체의 가능성...) | 과학을 보다 EP.165
+              </p>
+              <div class="video-author-container">
+                <p class="video-author">
+                  보다 BODA
+                </p>
+                <div class="icon icon-official" data-icon="official-badge"></div>
+              </div>
+              <p class="video-stats">
+                조회수 44만회 • 1일 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/9.avif">
+            <div class="video-time">5:38:45</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/lifeplus.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                🔫코미디부터 추리까지! 장르 시리즈 총출동.zip⚔️ | 라플위클리 전 시즌 모아보기 3편 - 장르물 모음집 #궤도 #안현모 #이동진 [LIFEPLUS]
+              </p>
+              <div class="video-author-container">
+                <p class="video-author">
+                  LIFEPLUS TV
+                </p>
+                <div class="icon icon-official" data-icon="official-badge"></div>
+              </div>
+              <p class="video-stats">
+                조회수 6.1만회 • 3개월 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 10 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/10.avif">
+            <div class="video-time">8:03</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/knowledge.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                지구 생명체가 화성에서 시작했다는 최신 증거들이 나오기 시작했다
+              </p>
+              <div class="video-author-container">
+                <p class="video-author">
+                  지식보관소
+                </p>
+                <div class="icon icon-official" data-icon="official-badge"></div>
+              </div>
+              <p class="video-stats">
+                조회수 11만회 • 3일 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 11 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/11.avif">
+            <div class="video-time">15:21</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/unrealtech.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                (광고아님) 유독 스포티파이가 노래 추천을 잘한다는 평이 많은 이유
+              </p>
+              <div class="video-author-container">
+                <p class="video-author">
+                  안될공학 - IT 테크 신기술
+                </p>
+                <div class="icon icon-official" data-icon="official-badge"></div>
+              </div>
+              <p class="video-stats">
+                조회수 1.3만회 • 5일
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 12 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/12.avif">
+            <div class="video-time">26:35</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/mistery.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                [통합영상] '나 혼자만 레벨업' 전투력 정리! 통합영상입니다. / 모든 캐릭터 전투력 총정리! / Solo Leveling / Only I Level Up / 스포주의!
+              </p>
+              <p class="video-author">
+                수상한아재
+              </p>
+              <p class="video-stats">
+                조회수 242만회 • 3년 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 13 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/13.avif">
+            <div class="video-time">9:31</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/gshikbaek.jpg">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">
+                  세계최고 프로와 디렉터에게 직접 듣다 [TFT 파리 오픈]
+                </p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <div class="video-author-container">
+                <p class="video-author">김성회의 G식백과</p>
+                <div class="icon icon-official" data-icon="official-badge"></div>
+              </div>
+              <p class="video-stats">
+                조회수 3.7만회 • 3일 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 14 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/14.avif">
+            <div class="video-time">9:11</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/unrealtech.jpg">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">
+                  구글, OpenAI와는 다르다... xAI Grok, 초간단 실시간 시스템 만든다 | 기업 정보 정확도까지 1등 | RAG API
+                </p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <div class="video-author-container">
+                <p class="video-author">안될공학 - IT 테크 신기술</p>
+                <div class="icon icon-official" data-icon="official-badge"></div>
+              </div>
+              <p class="video-stats">
+                조회수 6.4만회 • 11일 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 15 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/thumbnail-1.jpeg">
+            <div class="video-time">12:48</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">밤하늘에 쏟아지는 별빛, 힐링 풍경 영상</p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <p class="video-author">감성풍경</p>
+              <p class="video-stats">
+                조회수 3.2만회 • 5개월 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 16 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/thumbnail-2.jpeg">
+            <div class="video-time">9:15</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">집중력 올라가는 미니멀 데스크 셋업</p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <p class="video-author">Desk Mood</p>
+              <p class="video-stats">
+                조회수 1.8만회 • 4개월 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 17 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/thumbnail-3.jpeg">
+            <div class="video-time">15:02</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">숲과 호수, 아무 말도 필요 없는 새벽</p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <p class="video-author">자연의 소리</p>
+              <p class="video-stats">
+                조회수 9천회 • 6개월 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 18 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/thumbnail-4.jpeg">
+            <div class="video-time">18:36</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">드론으로 담은 북유럽 바다 마을</p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <p class="video-author">Slow Travel</p>
+              <p class="video-stats">
+                조회수 2.1만회 • 3개월 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 19 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/thumbnail-5.jpeg">
+            <div class="video-time">7:42</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">도시 위로 흐르는 겨울 하늘 타임랩스</p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <p class="video-author">City Mood</p>
+              <p class="video-stats">
+                조회수 7.4천회 • 2개월 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 20 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/thumbnail-6.jpeg">
+            <div class="video-time">14:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">노을 지는 런던, 하루의 끝</p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <p class="video-author">Evening Walk</p>
+              <p class="video-stats">
+                조회수 1.3만회 • 5개월 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 21 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/thumbnail-7.jpeg">
+            <div class="video-time">11:54</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">유럽 소도시 골목길 산책 브이로그</p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <p class="video-author">Slow Streets</p>
+              <p class="video-stats">
+                조회수 4.9천회 • 1개월 전
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 22 -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="assets/images/thumbnails/thumbnail-8.jpeg">
+            <div class="video-time">20:31</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+            </div>
+            <div class="video-info">
+              <div class="video-title-container">
+                <p class="video-title">파도 소리만 남긴 고요한 등대 풍경</p>
+                <button class="video-menu-btn" title="메뉴">
+                  <div class="icon" data-icon="menu"></div>
+                </button>
+              </div>
+              <p class="video-author">Ocean Calm</p>
+              <p class="video-stats">
+                조회수 2.7만회 • 6개월 전
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </content>
+  </main>
+</body>
+
+</html>

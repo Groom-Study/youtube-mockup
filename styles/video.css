@@ -1,0 +1,136 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 16px;
+  row-gap: 32px;
+  padding: 24px;
+  background-color: var(--primary);
+}
+
+/* 586px 이하 1개, 587px부터 2개 노출 */
+@media (min-width: 587px) {
+  .video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* 976px 이하 2개, 977px부터 3개 노출 */
+@media (min-width: 977px) {
+  .video-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* 가로 해상도 1838px 이하까지 3개를 유지하고, 1839px부터 4개 노출 */
+@media (min-width: 1839px) {
+  .video-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.video-preview {
+  width: 100%;
+  cursor: pointer;
+}
+
+.thumbnail-row {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.video-time {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 3px 4px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
+}
+
+.profile-picture {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.video-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.video-title {
+  flex: 1;
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f1f1f1;
+  /* 두 줄 이상일 때 말줄임표 처리 */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 22px;
+}
+
+.video-menu-btn {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: -2px;
+  margin-right: -10px;
+  cursor: pointer;
+  color: var(--icon-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.video-menu-btn:hover {
+  background-color: var(--static-gray);
+}
+
+.video-author-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.icon-official {
+  width: 14px;
+  height: 14px;
+  margin-left: 4px;
+  color: var(--text-secondary);
+}
+
+.video-author,
+.video-stats {
+  margin: 0;
+  line-height: 20px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}

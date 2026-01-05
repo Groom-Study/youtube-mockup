@@ -1,0 +1,391 @@
+header {
+  display: block;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.9);
+  backdrop-filter: blur(16px);
+  border-bottom: none;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  margin: 0;
+}
+
+.start-section {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.center-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 0 1 732px;
+  height: 40px;
+}
+
+.end-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  min-width: 225px;
+}
+
+.back-btn {
+  position: relative;
+  display: none;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  margin: 0;
+  margin-right: 8px;
+}
+
+.hamburger-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  margin: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.hamburger-btn:hover {
+  background-color: var(--static-gray);
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+  align-self: center;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.logo-renderer {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.logo-wrapper {
+  position: relative;
+  height: 20px;
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 14px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  box-sizing: content-box;
+}
+
+.icon-youtube {
+  width: 93px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--icon-color, #fff);
+}
+
+.icon-premium {
+  width: 101px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  box-sizing: content-box;
+
+  color: var(--icon-color, #fff);
+}
+
+.logo-youtube-country {
+  color: var(--text-secondary);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 12px;
+  left: 121px;
+  font-size: 10px;
+  font-weight: 400;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.skip-navigation {
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: -1000px;
+}
+
+.searchbox {
+  height: 40px;
+  position: relative;
+  display: flex;
+  flex: 1 1 0%;
+
+  margin-left: 40px;
+  padding: 0 4px;
+}
+
+.search-inputbox {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex: 1 1 0%;
+
+  height: 38px;
+  box-sizing: content-box;
+
+  margin-left: 32px;
+  padding-left: 16px;
+  padding-right: 4px;
+
+  border: 1px solid rgb(48, 48, 48);
+  box-shadow: none;
+  cursor: text;
+
+  border-radius: 40px 0 0 40px;
+  border-right: 0;
+}
+
+.search-inputbox::before {
+  content: "";
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  -webkit-mask-image: url("/assets/icons/search.svg");
+  mask-image: url("/assets/icons/search.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.search-inputbox:focus-within {
+  padding-left: 16px;
+  margin-left: 0;
+  border: 1px solid #1c62b9;
+}
+
+.search-inputbox:focus-within::before {
+  display: block;
+}
+
+.search-form {
+  display: flex;
+  flex: 1 1 0%;
+  padding: 0;
+  margin: 0;
+}
+
+.search-input {
+  display: block;
+  padding: 1px 0;
+  margin: 0;
+  width: 100%;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: start;
+  text-indent: 0px;
+  text-shadow: none;
+  word-spacing: 0px;
+
+  color: #fff;
+  background-color: transparent;
+  border: none;
+
+  box-shadow: none;
+  outline: none;
+}
+
+.search-assistant-wrapper {
+  display: block;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.search-assistant-btn {
+  display: block;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  background: none;
+  display: block;
+
+  padding: 4px;
+}
+
+.search-assistant-icon {
+  width: 19px;
+  height: 11px;
+  margin-top: 4px;
+  line-height: 24px;
+  border: 0;
+  background: transparent;
+}
+
+.search-btn {
+  width: 64px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 40px 40px 0;
+  border: 1px solid rgb(48, 48, 48);
+  padding: 0;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+
+.mic-wrapper {
+  display: block;
+  margin-left: 12px;
+  padding: 0;
+}
+
+.mic-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 100px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.mic-btn:hover {
+  background-color: var(--static-gray);
+}
+
+.alarm-btn {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.alarm-btn:hover {
+  background-color: var(--static-gray);
+}
+
+.create-btn {
+  height: 36px;
+  padding: 0 16px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 18px;
+  position: relative;
+  white-space: nowrap;
+  min-width: 0;
+  border: none;
+  outline-width: 0;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: var(--static-gray);
+}
+
+.icon-avatar {
+  width: 32px;
+  height: 32px;
+  display: block;
+  color: var(--icon-color, #fff);
+  border-radius: 50%;
+}
+
+.avatar-btn {
+  height: 34px;
+  width: 60px;
+  padding: 1px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer
+}
+
+.header-tooltip {
+  position: absolute;
+  background-color: var(--static-gray);
+  color: #fff;
+  top: 100%;
+  border-radius: 2px;
+  margin: 8px;
+  margin-top: 16px;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  text-size-adjust: 100%;
+  white-space: nowrap;
+
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.mic-btn:hover .header-tooltip,
+.alarm-btn:hover .header-tooltip {
+  opacity: 0.85;
+}
