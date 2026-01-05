@@ -182,7 +182,7 @@ header {
   display: none;
   width: 20px;
   height: 20px;
-  background-color: #fff;
+  background-color: var(--icon-color);
   -webkit-mask-image: url("/assets/icons/search.svg");
   mask-image: url("/assets/icons/search.svg");
   -webkit-mask-repeat: no-repeat;
