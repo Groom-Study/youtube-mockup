@@ -20,7 +20,7 @@ JS 강의를 통해서 자바스크립트에 대해서 배웠습니다.
 | **배윤상** | 유튜브 | [feature/yoonsang_FullStack19](https://github.com/Groom-Study/youtube-mockup/tree/feature/yoonsang_FullStack19) | ✅ 완료 |
 | **지연우** | 유튜브 | [feature/yeonwoo](https://github.com/Groom-Study/youtube-mockup/tree/feature/yeonwoo) | ✅ 완료 |
 | **엄효선** | 유튜브 | [feature/hsyeom](https://github.com/Groom-Study/youtube-mockup/tree/feature/hsyeom) | ✅ 완료 |
-| **이우민** | 유튜브 | [feature/member3](#) | 🏗️ 진행 중 |
+| **이우민** | 유튜브 | [feature/woomin](https://github.com/Groom-Study/youtube-mockup/tree/feature/woomin) | ✅ 완료 |
 
 ---
 
